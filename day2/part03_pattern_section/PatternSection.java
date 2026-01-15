@@ -6,16 +6,25 @@ public class PatternSection {
 
     public static void main(String[] args) {
         // TODO: Call each method below in this order:
-        // printEdge();
+        printEdge();
         // printDiamondTop();
         // printDiamondBottom();
-        // printEdge();
+        printEdge();
     }
 
-    // TODO: Print the edge line that fits the width for SIZE.
     // Format: + followed by repeating "=*" and ending with +
     // Example for SIZE=2: +=*=*=*=*+
     public static void printEdge() {
+        // print a +
+        System.out.print("+");
+
+        // write a loop to print =* a variable number of times
+        for (int i = 0; i < SIZE * 2; i ++) {
+            System.out.print("=*");
+        }
+
+        // print a +
+        System.out.println("+");
 
     }
 
@@ -39,4 +48,21 @@ public class PatternSection {
 
     }
     
+
+    /*
+    +=*=*=*=*=*=*+
+    |...../\.....|
+    |..../\/\....|
+    |.../\/\/\...|
+    |../\/\/\/\..|
+    |./\/\/\/\/\.|
+    |/\/\/\/\/\/\|
+    |\/\/\/\/\/\/|
+    |.\/\/\/\/\/.|
+    |..\/\/\/\/..|
+    |...\/\/\/...|
+    |....\/\/....|
+    |.....\/.....|
+    +=*=*=*=*=*=*+
+     */
 }
